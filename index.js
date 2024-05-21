@@ -9,8 +9,8 @@ const port = 3003;
 app.use(cors())
 
 app.get('/', (req, res) => {
-  console.log("sdffdgsdfg ")
-  res.send(200)
+  // console.log("sdffdgsdfg ")
+  res.send("Done")
 });
 
 app.post('/', (req, res) => {
@@ -23,7 +23,7 @@ app.post('/', (req, res) => {
   res.send(200)
 });
 
-app.listen(port || process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`listening at localhost:${port}`)
 });
 
