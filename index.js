@@ -23,7 +23,7 @@ app.post('/', (req, res) => {
   res.send(200)
 });
 
-app.listen(port, () => {
+app.listen(port || process.env.PORT, () => {
   console.log(`listening at localhost:${port}`)
 });
 
